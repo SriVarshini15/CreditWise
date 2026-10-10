@@ -1,0 +1,6 @@
+entrypoint = "app.py"
+run = "python -m src.launch_app"
+
+[deployment]
+run = ["python", "-m", "src.launch_app"]
+deploymentTarget = "cloudrun"

@@ -80,6 +80,21 @@ Open the local URL printed by Streamlit in the browser.
 
 The dashboard includes an executive snapshot, interactive TOP-500 queue filters and downloads, a TOP-20 worklist, customer repayment/bill-payment history, and model/governance comparisons. Queue reason text is specific to each account and describes model-score comparisons, not causal effects.
 
+## Deploy on Replit
+
+This repository includes a Replit run and deployment configuration. Import
+`https://github.com/SriVarshini15/CreditWise` into Replit, then select **Run** to
+start the dashboard. On a fresh workspace, the launcher downloads the UCI data
+and trains the candidate models if their artifacts are not present; the first
+startup can take several minutes. It reuses available artifacts and only
+regenerates the queue when needed.
+
+To publish it, use Replit's **Publish** flow and choose a web deployment. The
+app binds to Replit's `PORT` and listens on `0.0.0.0`. Model and queue files are
+generated locally at startup because they are excluded from Git. Review Replit's
+current deployment pricing and resource limits before publishing; the first
+deployment startup includes model training.
+
 ## Tests
 
 ```bash
