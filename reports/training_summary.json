@@ -1,0 +1,119 @@
+{
+  "selected_model": "logistic_regression",
+  "results": {
+    "logistic_regression": {
+      "val": {
+        "accuracy": 0.7615555555555555,
+        "precision": 0.46596858638743455,
+        "recall": 0.5366834170854271,
+        "f1": 0.4988323213451658,
+        "roc_auc": 0.7411445243335077,
+        "average_precision": 0.5125449743348093,
+        "confusion_matrix": [
+          [
+            2893,
+            612
+          ],
+          [
+            461,
+            534
+          ]
+        ],
+        "threshold": 0.5,
+        "precision_at_500": 0.66,
+        "recall_at_500": 0.3316582914572864
+      },
+      "test": {
+        "accuracy": 0.7653333333333333,
+        "precision": 0.47400346620450606,
+        "recall": 0.5491967871485943,
+        "f1": 0.5088372093023256,
+        "roc_auc": 0.7445690295428289,
+        "average_precision": 0.5036424733129016,
+        "confusion_matrix": [
+          [
+            2897,
+            607
+          ],
+          [
+            449,
+            547
+          ]
+        ],
+        "threshold": 0.5,
+        "precision_at_500": 0.612,
+        "recall_at_500": 0.3072289156626506
+      },
+      "run_id": "80fbf701cd024d5280992f672fe1861d"
+    },
+    "random_forest": {
+      "val": {
+        "accuracy": 0.752,
+        "precision": 0.45148356054530875,
+        "recall": 0.5658291457286432,
+        "f1": 0.5022301516503123,
+        "roc_auc": 0.7387278761854923,
+        "average_precision": 0.4960942079368706,
+        "confusion_matrix": [
+          [
+            2821,
+            684
+          ],
+          [
+            432,
+            563
+          ]
+        ],
+        "threshold": 0.5,
+        "precision_at_500": 0.62,
+        "recall_at_500": 0.31155778894472363
+      },
+      "test": {
+        "accuracy": 0.7437777777777778,
+        "precision": 0.43984674329501916,
+        "recall": 0.5763052208835341,
+        "f1": 0.4989135158626684,
+        "roc_auc": 0.7303444657625937,
+        "average_precision": 0.4590735099835167,
+        "confusion_matrix": [
+          [
+            2773,
+            731
+          ],
+          [
+            422,
+            574
+          ]
+        ],
+        "threshold": 0.5,
+        "precision_at_500": 0.578,
+        "recall_at_500": 0.2901606425702811
+      },
+      "run_id": "8e6da2b80ce241a2b85ee0cbea66f8a7"
+    }
+  },
+  "feature_columns": [
+    "LIMIT_BAL",
+    "PAY_0",
+    "PAY_2",
+    "PAY_3",
+    "PAY_4",
+    "PAY_5",
+    "PAY_6",
+    "BILL_AMT1",
+    "BILL_AMT2",
+    "BILL_AMT3",
+    "BILL_AMT4",
+    "BILL_AMT5",
+    "BILL_AMT6",
+    "PAY_AMT1",
+    "PAY_AMT2",
+    "PAY_AMT3",
+    "PAY_AMT4",
+    "PAY_AMT5",
+    "PAY_AMT6"
+  ],
+  "target_column": "default payment next month",
+  "id_column": "ID",
+  "queue_path": "/Users/srivarshini/Documents/Luminary/outputs/top_500_review_queue.csv"
+}
